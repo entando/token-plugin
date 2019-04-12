@@ -28,8 +28,8 @@ public class Token implements Serializable {
     @SequenceGenerator(name = "sequenceGenerator")
     private Long id;
 
-    @NotNull
-    @Column(name = "jhi_value", nullable = false, unique = true)
+    
+    @Column(name = "jhi_value", unique = true)
     private String value;
 
     @NotNull

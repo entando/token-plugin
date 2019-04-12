@@ -1,5 +1,5 @@
 entity Token {
-    value String required unique
+    value String unique
     type TokenType required
     username String required
     expirationTime ZonedDateTime
