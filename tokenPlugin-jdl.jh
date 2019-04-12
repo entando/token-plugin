@@ -1,0 +1,16 @@
+entity Token {
+    value String required unique
+    type TokenType required
+    expirationTime ZonedDateTime
+}
+
+enum TokenType {
+    REGISTRATION, VALIDATION, RESET
+}
+
+/**
+ * One to many relationship.
+ */
+relationship OneToMany {
+    User to Token
+}

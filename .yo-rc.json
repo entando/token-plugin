@@ -1,0 +1,57 @@
+{
+  "generator-jhipster-entando": {
+    "promptValues": {
+      "packageName": "org.entando.plugin.token"
+    },
+    "jhipsterVersion": "5.8.2",
+    "applicationType": "microservice",
+    "baseName": "tokenPlugin",
+    "packageName": "org.entando.plugin.token",
+    "packageFolder": "org/entando/plugin/token",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZTgyNjM2YzMxYzg1MTQ2NGY1YzllNzU0ZjFhMWFhMTUzODA0NTcyY2U4NmI4YjRhZmFlMWM4ZThlNWZlNjM0OWVmZjIwOTJiNjc0YjUxZDEzYmE0NzJhYzBmMzg1MDYxM2ZiYTFjYWQ4NGY4ZTNiOTY1NzM4OTZjMjUyOWQzMWM=",
+    "useSpringDataRest": true,
+    "includeQuerydsl": true
+  },
+  "generator-jhipster": {
+    "promptValues": {
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.0.0-beta.0",
+    "applicationType": "microservice",
+    "baseName": "tokenPlugin",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-entando",
+        "version": "0.0.0"
+      }
+    ],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "it"
+    ],
+    "blueprint": "generator-jhipster-entando",
+    "blueprintVersion": "0.0.0",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
