@@ -161,4 +161,5 @@ jhipster:
 # https://www.jhipster.tech/common-application-properties/
 # ===================================================================
 
-# application:
+application:
+    tokenExpirationInHours: 144 # 6 days in hours
