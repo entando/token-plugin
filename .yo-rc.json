@@ -9,7 +9,7 @@
     "packageName": "org.entando.plugin.token",
     "packageFolder": "org/entando/plugin/token",
     "serverPort": "8081",
-    "authenticationType": "jwt",
+    "authenticationType": "oauth2",
     "cacheProvider": "hazelcast",
     "enableHibernateCache": true,
     "websocket": false,
@@ -21,7 +21,7 @@
     "serviceDiscoveryType": false,
     "buildTool": "maven",
     "enableSwaggerCodegen": false,
-    "jwtSecretKey": "ZTgyNjM2YzMxYzg1MTQ2NGY1YzllNzU0ZjFhMWFhMTUzODA0NTcyY2U4NmI4YjRhZmFlMWM4ZThlNWZlNjM0OWVmZjIwOTJiNjc0YjUxZDEzYmE0NzJhYzBmMzg1MDYxM2ZiYTFjYWQ4NGY4ZTNiOTY1NzM4OTZjMjUyOWQzMWM=",
+    "jwtSecretKey": "N2Y5YThhZWJjODU0OTI3NjQwNTUwZmZmNDU2YWIyMTI0Y2VmOWVhMzYzMWYxMTk1M2U3YWM4OWUzZGYwODA3ZTdiM2NjMjk5YWU2YWZiZTc0ZDZhMjQyNGU0Y2MwNTAxMGQzYTQzNjc5OTczNWUxMWUyMWQyMzcxOTIxMjdlNDY=",
     "useSpringDataRest": true,
     "includeQuerydsl": true
   },

@@ -9,8 +9,10 @@ import org.springframework.data.querydsl.binding.QuerydslBinderCustomizer;
 import org.springframework.data.querydsl.binding.QuerydslBindings;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+import org.springframework.security.access.prepost.PreAuthorize;
 
 
+@PreAuthorize("hasAuthority('token-generator')")
 @RepositoryRestResource(collectionResourceRel = "tokens", path = "tokens")
 public interface RestTokenRepository extends PagingAndSortingRepository<Token, Long>, QuerydslPredicateExecutor<Token>, QuerydslBinderCustomizer<QToken> {
     // Add here all your custom endpoints

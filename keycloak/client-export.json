@@ -1,0 +1,150 @@
+{
+  "id": "75f4e29d-3744-49ff-9ef4-cd446c28efc3",
+  "realm": "entando-development",
+  "displayName": "Entando - Development",
+  "roles": {
+    "client": {
+      "entando-auth": [
+        {
+          "id": "12a09e16-f8c7-43f4-b3c8-063070f7e9a1",
+          "name": "client-list",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "3ca3682f-9eb1-44b8-8468-30635ac1e810",
+          "attributes": {}
+        },
+        {
+          "id": "5b3c2114-cdb1-4871-96fb-5c8be69dee8d",
+          "name": "client-sync",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "3ca3682f-9eb1-44b8-8468-30635ac1e810",
+          "attributes": {}
+        },
+        {
+          "id": "edea7795-51a6-454c-a671-aeda5e7342f3",
+          "name": "user-read",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "3ca3682f-9eb1-44b8-8468-30635ac1e810",
+          "attributes": {}
+        },
+        {
+          "id": "67356341-07aa-4dff-bf93-ed4b632dc79a",
+          "name": "client-list-roles",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "3ca3682f-9eb1-44b8-8468-30635ac1e810",
+          "attributes": {}
+        },
+        {
+          "id": "98723c74-c9d7-4655-821e-8078de52194f",
+          "name": "user-create",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "3ca3682f-9eb1-44b8-8468-30635ac1e810",
+          "attributes": {}
+        },
+        {
+          "id": "627ad632-cc2c-411f-81b1-89ce1d293bfa",
+          "name": "user-update",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "3ca3682f-9eb1-44b8-8468-30635ac1e810",
+          "attributes": {}
+        },
+        {
+          "id": "c27e9430-a126-45c8-9ea6-74820e76ce66",
+          "name": "client-credentials",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "3ca3682f-9eb1-44b8-8468-30635ac1e810",
+          "attributes": {}
+        }
+      ]
+    }
+  },
+  "clients": [
+    {
+      "id": "3ca3682f-9eb1-44b8-8468-30635ac1e810",
+      "clientId": "entando-auth",
+      "name": "entando-auth",
+      "surrogateAuthRequired": false,
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "7b37c57a-6076-4834-ab95-fce93136d358",
+      "redirectUris": [],
+      "webOrigins": [],
+      "notBefore": 0,
+      "bearerOnly": false,
+      "consentRequired": false,
+      "standardFlowEnabled": false,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "serviceAccountsEnabled": true,
+      "publicClient": false,
+      "frontchannelLogout": false,
+      "protocol": "openid-connect",
+      "attributes": {},
+      "authenticationFlowBindingOverrides": {},
+      "fullScopeAllowed": true,
+      "nodeReRegistrationTimeout": -1,
+      "protocolMappers": [
+        {
+          "id": "fa9a3bd2-49c2-4522-96d3-189dc10aa1b6",
+          "name": "Client ID",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usersessionmodel-note-mapper",
+          "consentRequired": false,
+          "config": {
+            "user.session.note": "clientId",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "clientId",
+            "jsonType.label": "String"
+          }
+        },
+        {
+          "id": "7b825e7b-1b61-4111-87a3-55a8c3eda92e",
+          "name": "Client IP Address",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usersessionmodel-note-mapper",
+          "consentRequired": false,
+          "config": {
+            "user.session.note": "clientAddress",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "clientAddress",
+            "jsonType.label": "String"
+          }
+        },
+        {
+          "id": "b2ac49e0-0a77-4b16-94ad-2d6748fa4b52",
+          "name": "Client Host",
+          "protocol": "openid-connect",
+          "protocolMapper": "oidc-usersessionmodel-note-mapper",
+          "consentRequired": false,
+          "config": {
+            "user.session.note": "clientHost",
+            "id.token.claim": "true",
+            "access.token.claim": "true",
+            "claim.name": "clientHost",
+            "jsonType.label": "String"
+          }
+        }
+      ],
+      "defaultClientScopes": [
+        "web-origins",
+        "role_list",
+        "roles",
+        "profile",
+        "email"
+      ],
+      "optionalClientScopes": [
+        "address",
+        "phone",
+        "offline_access"
+      ]
+    }
+  ]
+}
