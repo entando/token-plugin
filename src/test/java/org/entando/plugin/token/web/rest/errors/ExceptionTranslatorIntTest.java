@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
@@ -34,6 +35,7 @@ public class ExceptionTranslatorIntTest {
     private ExceptionTranslator exceptionTranslator;
 
     @Autowired
+    @Qualifier("mappingJackson2HttpMessageConverter")
     private MappingJackson2HttpMessageConverter jacksonMessageConverter;
 
     private MockMvc mockMvc;

@@ -15,6 +15,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.cache.CacheManager;
 import org.springframework.data.web.PageableHandlerMethodArgumentResolver;
@@ -70,6 +71,7 @@ public class UserResourceIntTest {
     private UserMapper userMapper;
 
     @Autowired
+    @Qualifier("mappingJackson2HttpMessageConverter")
     private MappingJackson2HttpMessageConverter jacksonMessageConverter;
 
     @Autowired
