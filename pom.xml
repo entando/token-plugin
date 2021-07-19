@@ -33,9 +33,9 @@
         <m2e.apt.activation>jdt_apt</m2e.apt.activation>
         <run.addResources>false</run.addResources>
         <!-- These remain empty unless the corresponding profile is active -->
-        <profile.no-liquibase />
-        <profile.swagger />
-        <profile.tls />
+        <profile.no-liquibase/>
+        <profile.swagger/>
+        <profile.tls/>
 
         <!-- Dependency versions -->
         <jhipster-dependencies.version>2.1.1</jhipster-dependencies.version>
@@ -93,7 +93,7 @@
         <sonar.junit.reportsPath>${project.testresult.directory}</sonar.junit.reportsPath>
         <sonar.tests>${project.basedir}/src/test/</sonar.tests>
 
-        <querydsl.version>4.1.3</querydsl.version>
+        <querydsl.version>4.4.0</querydsl.version>
         <!-- jhipster-needle-maven-property -->
     </properties>
 
@@ -555,9 +555,9 @@
                         <diffChangeLogFile>${project.basedir}/src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
                         <driver>org.h2.Driver</driver>
                         <url>jdbc:h2:file:${project.build.directory}/h2db/db/tokenplugin</url>
-                        <defaultSchemaName></defaultSchemaName>
+                        <defaultSchemaName/>
                         <username>tokenPlugin</username>
-                        <password></password>
+                        <password/>
                         <referenceUrl>hibernate:spring:org.entando.plugin.token.domain?dialect=org.hibernate.dialect.H2Dialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
                         <verbose>true</verbose>
                         <logging>debug</logging>
